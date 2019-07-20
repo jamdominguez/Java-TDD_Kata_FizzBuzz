@@ -68,4 +68,28 @@ public class NumberCheckerTest {
     public void fifteenReturnFizzBuzz() {
         assertEquals("FizzBuzz", NumberChecker.fizzBuzz(15));
     }
+
+    @Test
+    public void onlyDivisibleByThreeReturnFizz() {
+        int[] numbers = {3, 6, 9, 12, 18, 21, 24, 27, 33, 36, 39};
+        for (int number : numbers) {
+            assertEquals("Fizz", NumberChecker.fizzBuzz(number));
+        }
+    }
+
+    @Test
+    public void onlyDivisibleByFiveReturnBuzz() {
+        int[] numbers = {5, 10, 20, 25, 35, 40, 50, 55, 65, 70, 80};
+        for (int number : numbers) {
+            assertEquals("Buzz", NumberChecker.fizzBuzz(number));
+        }
+    }
+
+    @Test
+    public void divisibleByThreeAndFiveReturnFizzBuzz() {
+        int[] numbers = {15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165};
+        for (int number : numbers) {
+            assertEquals("FizzBuzz", NumberChecker.fizzBuzz(number));
+        }
+    }
 }
