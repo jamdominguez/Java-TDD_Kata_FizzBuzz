@@ -18,4 +18,9 @@ public class NumberCheckerTest {
     public void twoReturnTwo() {
         assertEquals("2", NumberChecker.fizzBuzz(2));
     }
+
+    @Test
+    public void threeReturnFizz() {
+        assertEquals("Fizz", NumberChecker.fizzBuzz(3));
+    }
 }
