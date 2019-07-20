@@ -8,4 +8,14 @@ public class NumberCheckerTest {
     public void zeroReturnZero() {
         assertEquals("0", NumberChecker.fizzBuzz(0));
     }
+
+    @Test
+    public void oneReturnOne() {
+        assertEquals("1", NumberChecker.fizzBuzz(1));
+    }
+
+    @Test
+    public void twoReturnTwo() {
+        assertEquals("2", NumberChecker.fizzBuzz(2));
+    }
 }
