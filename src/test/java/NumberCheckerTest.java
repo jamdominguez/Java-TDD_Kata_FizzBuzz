@@ -58,4 +58,14 @@ public class NumberCheckerTest {
     public void tenReturnBuzz() {
         assertEquals("Buzz", NumberChecker.fizzBuzz(10));
     }
+
+    @Test
+    public void twelveReturnFizz() {
+        assertEquals("Fizz", NumberChecker.fizzBuzz(12));
+    }
+
+    @Test
+    public void fifteenReturnFizzBuzz() {
+        assertEquals("FizzBuzz", NumberChecker.fizzBuzz(15));
+    }
 }
